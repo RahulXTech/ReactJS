@@ -8,10 +8,10 @@ function App() {
     name:"rahul_kumar",
     branch:"cse",
     subject:"computer_science"
-  }
+  } 
   return (
     <div>
-      <About email="rahulkumar@gmail.com" address="kiran nagar bhopal madhya pradesh india" college={student} />
+      <About email="rahulkumar@gmail.com" address="kiran nagar bhopal madhya pradesh india" college={student} abc="hello abc charactor" />
     </div>
   );
 }
