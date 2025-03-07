@@ -1,0 +1,12 @@
+.error{
+    color: red;
+    background-color: darkmagenta;
+    font-size: x-large;
+}
+.fixed{
+    background-color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
