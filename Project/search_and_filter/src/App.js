@@ -1,7 +1,27 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import Category from "./Category";
 import Product from "./Product";
 
 function App() {
+
+  let [prouctCategory, setProductCategory] = useState([])
+  let URL = 'https://dummyjson.com/products/categories'
+  
+  let getCategory=()=>{
+    axios.get(URL)
+    .then((rec)=>{
+      setProductCategory(rec.data)
+      // console.log(rec.data)
+    })
+  }
+  
+  useEffect(()=>{
+    getCategory()
+    
+  }, [])
+  
+  console.log(prouctCategory)
   return (
     <>
       <div className="py-[40px]">
@@ -15,14 +35,6 @@ function App() {
             </div>
             <div>
               <div className="grid grid-cols-3 gap-4">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
                 <Product />
                 <Product />
               </div>
