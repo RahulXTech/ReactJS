@@ -10,10 +10,7 @@ export default function Category() {
                     <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
                     <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
                     <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
-                    <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
-                    <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
-                    <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
-                    <li className='bg-gray-500 p-[7px] cursor-pointer my-2'>Bracelet</li>
+
                 </ul>
         </div>
     </>
