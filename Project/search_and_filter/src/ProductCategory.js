@@ -1,4 +1,7 @@
-const PCategory = [
+import React from 'react'
+
+function ProductCategory() {
+  const PCategory = [
     "beauty",
     "fragrances",
     "furniture",
@@ -24,3 +27,16 @@ const PCategory = [
     "womens-shoes",
     "womens-watches"
   ];
+  return (
+    <div>
+      <ul>
+          {ProductCategory.map((cate, index)=>(
+            <li key={index}> {cate}</li>
+          ))}
+        
+      </ul>
+    </div>
+  )
+}
+
+export default ProductCategory

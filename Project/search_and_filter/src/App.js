@@ -4,10 +4,8 @@ import Category from "./Category";
 import Product from "./Product";
 
 function App() {
-
   let [prouctCategory, setProductCategory] = useState([])
   let URL = 'https://dummyjson.com/products/categories'
-  
   let getCategory=()=>{
     axios.get(URL)
     .then((rec)=>{
@@ -20,6 +18,8 @@ function App() {
     getCategory()
     
   }, [])
+
+  
   
   console.log(prouctCategory)
   return (
@@ -32,11 +32,20 @@ function App() {
           <div className="grid grid-cols-[30%_auto] gap-[20px]">
             <div className="bg-gray-200">
               <Category />
+              <ul>
+
+              {prouctCategory.map((categ, index)=>(
+                
+                <li key={index}> {categ}</li>
+                ))}
+              
+                </ul>
             </div>
             <div>
               <div className="grid grid-cols-3 gap-4">
                 <Product />
                 <Product />
+
               </div>
             </div>
           </div>
