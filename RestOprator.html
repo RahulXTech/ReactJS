@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RestOprator and spread oprator in ES6</h1>
+    <script>
+        //======Rest oprator======
+//The JavaScript Rest parameter allows a function to accept an indefinite number of arguments as an array
+
+function students(name, id, course, ...other){
+    console.log(name, id, course);
+    console.log(other);
+    console.log(other[0]);
+    console.log(other[2]);
+}
+
+students("rahul",8848,"Btech",345,454,354,765,678,457,864,756,"mohiti");
+
+//Second example to print all element using rest oprator
+const names = ["Rahul","Rohit","Mohit","Sohan","Ankit","Monarki"];
+
+console.log(...names)
+
+//Example on Object.
+
+var studentss = {
+    name : "Rahul",
+    id : 5675,
+    course : "Btech"
+}
+const {...rest} = studentss;
+console.log(rest);
+
+//Spread
+
+
+</script>
+</body>
+</html>
