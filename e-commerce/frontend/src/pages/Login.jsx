@@ -21,7 +21,6 @@ function Login() {
   }
 
   const handleLogin = async (e) => {
-
     e.preventDefault()
 
     try {
@@ -30,7 +29,7 @@ function Login() {
 
       // Save token in localStorage
       localStorage.setItem("token", response.data.token)
-
+      console.log(response, "data")
       setMsg(response.data.message)
 
       // Redirect to home page
